@@ -3,15 +3,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #demo{
+            width: 200px;
+            height: 200px;
+            background: red;
+        }
+    </style>
 </head>
 <body>
     <script>
         //圆面积
-        function m (r,pi){
-           return console.log(pi*r**2)
+        function m (r){
+            document.getElementById("demo").innerText=(3.14*r**2);
+           //return console.log(3.14*r**2);
+           
         }
-        m(2,3.14)
+       // m(2);
         
     </script>
+    <div id="demo" onclick="m(2)">123</div>
 </body>
 </html>

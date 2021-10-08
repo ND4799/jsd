@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       /* 
+        * 函数提升
+        * 函数声明式创建的函数，会在所有代码执行前被创建，可以提前调用
+        * 函数表达式创建函数（var），不会声明提前创建，其实只是创建了var fun2这个变量，这个变量是undienf，所有调用的时候会报错
+        * 
+       */
+     
+      fun1()
+       function fun1 (){
+           console.log('1')
+       }
+       //fun2()
+       var fun2 = function(){
+           console.log('2')
+       }
+    </script>
+</body>
+</html>

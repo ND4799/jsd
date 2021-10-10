@@ -11,14 +11,19 @@
       //js 连加
         function a (){
 
-            let x=0;
-
-            for (let i = 1; i <= 4; i++) {
-                x= x+i;
-                
-
+            let sum = 0;
+            let count = 0;
+            let n = 2;
+            for (let i = 1; i <= 100; i++) {
+                if(i%n == 0){
+                    sum+=i;
+                    count++;
+                    console.log(i)
+                }
+               //console.log(sum)
+               
             }
-           console.log(x);
+            console.log(`${n}的倍数之和是${sum},总数量是${count}`);
         }
         a();
         
@@ -28,13 +33,20 @@
             let x=1;
 
             for (let i = 1; i <= 4; i++) {
-                x= x*i;
+                x*=i;
                 
 
             }
             console.log(x);
         }
         b();
+        function c(){
+            //let x=7;
+            for (let i = 1; i <= 100; i++) {
+                document.write(i +"<Br>")
+            }
+        }
+        c();
     </script>
 </body>
 </html>

@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id='ipt' value="" onfocus="this.value=''"><button id="btn" onclick="fun()">xx</button>
+    <script>
+        
+        //console.log(age);
+       function fun(){
+            let age = document.getElementById('ipt').value;
+            age = +age;
+            //alert(typeof age);
+            if (age < 1 || isNaN(age)){
+               alert('只能输入数字')
+            }else{
+                if(age >= 1 && age < 3){
+                    alert('baby');
+                }else if(age >= 3 && age < 6){
+                    alert('幼儿园');
+                }else if(age >= 6 && age < 12){
+                    alert('小学');
+                }else if(age >= 12 && age < 18){
+                    alert('中学');
+                }else if(age >= 18 && age < 22){
+                    alert('大学');
+                }else{
+                    alert('上班')
+                }
+            }
+           
+       }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* 一、类型转换成string：
+         * 1.使用用toString()方法，实例var a =10；a.toString()
+         * 调用x的y方法就是:x.y()
+         * 2.使用String()函数,String(a)
+         * 二、类型转换成number
+         * 1.Number()
+         * 2.parseInt()和parseFloat()
+         * 三、类型转换成boolean用Boolean()函数
+         * 1.数字转布尔，除了0和NaN,其他都三true
+         * 2.字符串转布尔，除了空，其他都是true
+         * 3.null和undefined转换false
+         * 
+         * 
+        */
+        var a = 10;
+        
+        //a = a.toString();//用方法转化
+        a = String(a);//用函数转化
+        a = '103443242';
+        a = Number(a);
+        a = '13432px'
+        a = parseInt(a);
+        a = '343243.432432px'
+        a = parseFloat(a);
+        document.write(typeof a+'<Br><Br>');
+       // document.write('<br/><br/><br/>');
+        document.write(a);
+        console.log(typeof a);
+        console.log(a);
+        
+    </script>
+</body>
+</html>

@@ -12,13 +12,13 @@
         * 函数作用域可以访问全局作用域变量，全局作用域不能访问函数作用域变量
         * 函数作用域操作变量时，先从自身作用域寻找，有就直接使用，没有就往上一级查找，直至全局外围，如果还没有就时not defined
         */
-       var a = 100;
+       let a = 100;
        function fun (){
-        let a =10;
+        //let a =10;
         console.log(`fun里的a=${a}`)
         function fun2()
             {   
-                //var a = 1;
+                //let a = 1;
                 console.log(`fun2里的a=${a}`)
             }
             fun2();

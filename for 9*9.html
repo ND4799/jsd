@@ -9,7 +9,7 @@
 </head>
 <body>
     <script>
-       function fun() {
+       const fun = () => {
             let n = 9;
             let count = 0;
             console.time('time')
@@ -24,8 +24,9 @@
             }
             console.timeEnd('time')
        }
+       fun()
        
-       fun();
+       
     </script>
 </body>
 </html>

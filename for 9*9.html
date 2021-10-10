@@ -10,8 +10,9 @@
 <body>
     <script>
        function fun() {
-            let n = 15;
+            let n = 9;
             let count = 0;
+            console.time('time')
             for (let i = 1; i <= n; i++){
                 for(let j = 1; j < i+1; j++){
                     
@@ -21,6 +22,7 @@
                 }
                 document.write('<br>')
             }
+            console.timeEnd('time')
        }
        
        fun();

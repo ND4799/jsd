@@ -3,13 +3,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 <body>
    <script>
        const fun = function () {
-           console.log('xixi！')
+           console.log('xixi！');
+           state = {
+               repName:'',
+               repUrl:'',
+               //isLoading:true,
+               keyWord:'r',
+               error:''
+
+           }
+           const URL = 'https://api.github.com/search/repositories?q=r&sort=stars';
+            axios.get(URL)
+            .then((value) => {
+                let {name,html_url} = value.data.items[0];
+                this.setState({
+                    repName:name,
+                    repUrl:html_url
+
+                })
+                console.log(name,html_url);
+            })
+            .catch((reason) => {
+                console.log(reason);
+            })
        }();
        //自调用，闭包函数
+       
+       //console.log(axios);
+       
    </script> 
 </body>
 </html>

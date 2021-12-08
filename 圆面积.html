@@ -14,14 +14,17 @@
 <body>
     <script>
         //圆面积
-        function m (r){
-            document.getElementById("demo").innerText=(3.14*r**2);
+        const m =()=>{
+            let r = 30;
+            let area = Math.PI*Math.pow(r,2);
+            document.getElementById("demo").innerHTML=area;
+            console.log(area);
            //return console.log(3.14*r**2);
            
         }
-       // m(2);
+     
         
     </script>
-    <div id="demo" onclick="m(2)">123</div>
+    <div id="demo" onclick="m()">求面积</div>
 </body>
 </html>

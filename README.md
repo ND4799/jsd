@@ -6,7 +6,7 @@
 >* git config user.email "email@.com" //局部设置邮箱
 
 
-或在命令行上创建一个新的存储库 666777
+或在命令行上创建一个新的存储库 66677788888
 >* github上的顺序是init add comm，然后branch改名会报错，因为这个时候的提交是假提交，没有名字和email，所以在init之后要马上配置名字和email，然后在add comm branch -M
 
 >* git init     //把当前文件夹初始化成git仓库，执行命令后当前文件夹会有一个隐藏的.git文件夹，代表成功

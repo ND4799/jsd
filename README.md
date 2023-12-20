@@ -1,5 +1,5 @@
 
-配置111
+配置2013 1223
 >* git config --global user.name "username"  //全局设置用户名
 >* git config user.name "username"  //局部设置用户名
 >* git config --global user.email "email@.com" //全局设置邮箱
@@ -19,7 +19,7 @@
 >* git branch -M main  //github更改了主干由master——》main，这个是改名字
 >* git remote add origin https://github.com/rexzhang4799/demo.git  //关联远程仓库
 >* git push -u origin main  //推送到远程仓库
-...或从命令行推送现有存储库
+...或从命令行推送现有存储库g
 >* git remote add origin https://github.com/rexzhang4799/demo.git
 >* git branch -M main
 >* git push -u origin main

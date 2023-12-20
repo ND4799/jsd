@@ -1,5 +1,5 @@
 
-配置2013 1223
+配置2023 1223
 >* git config --global user.name "username"  //全局设置用户名
 >* git config user.name "username"  //局部设置用户名
 >* git config --global user.email "email@.com" //全局设置邮箱
@@ -47,4 +47,4 @@
 
 
 如果你没有看到.git目录，那是因为这个目录默认是隐藏的，用ls -ah命令就可以看见。
-Command+Shift+. ls
+Command+Shift+. lsgit 

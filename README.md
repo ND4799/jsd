@@ -48,3 +48,5 @@
 
 如果你没有看到.git目录，那是因为这个目录默认是隐藏的，用ls -ah命令就可以看见。
 Command+Shift+. lsgit 
+
+exit()  退出运行的

@@ -1,32 +1,44 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        span{display: inline-block;width: 110px;height:30px;line-height: 30px;margin:1px; background:rgb(204, 83, 14);text-align: center;color: rgb(49, 66, 5);}
+        span {
+            display: inline-block;
+            width: 110px;
+            height: 30px;
+            line-height: 30px;
+            margin: 1px;
+            background: rgb(204, 83, 14);
+            text-align: center;
+            color: rgb(49, 66, 5);
+        }
     </style>
 </head>
+
 <body>
     <script>
-       const fun = () => {
+        const fun = () => {
             let n = 9;
             let count = 0;
             console.time('time')
-            for (let i = 1; i <= n; i++){
-                for(let j = 1; j <= i; j++){
-                    
-                    document.write(`<span>${j} x ${i} = ${i*j}</span>`);
-                    
-                
+            for (let i = 1; i <= n; i++) {
+                for (let j = 1; j <= i; j++) {
+
+                    document.write(`<span>${j} x ${i} = ${i * j}</span>`);
+
+
                 }
                 document.write('<br>')
             }
             console.timeEnd('time')
-       }
-       fun()
-       
-       
+        }
+        fun()
+
+
     </script>
 </body>
+
 </html>

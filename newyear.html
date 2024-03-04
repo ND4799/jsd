@@ -7,12 +7,14 @@
 <body>
     <h3 id="year">11</h3>
     <script>
-       let res = document.getElementById('year').innerText('过年')
-       const tdate = new Date();
-       const nyear = new Date('2022/2/1 00:00')
-       console.log(tdate)
-       console.log(nyear)
-       console.log(nyear-tdate)
+       let res = document.getElementById('year')
+       const todayDate = new Date();
+       const newYear = new Date("2025/2/1")
+       res.innerText = newYear+'过年🧨'
+       console.log(todayDate);
+       console.log(newYear);
+       console.log(newYear-todayDate);
+      
     </script>
 </body>
 </html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    #txt{position: relative;display:none;text-align: center;width: 400px; height: 30px;line-height: 30px;background: skyblue; top: 50px;left: 0px;}
+    </style>
+</head>
+<body>
+    <script>
+        const house = () => {
+            //console.log(document.getElementById('mea').value)
+            let zjdArea = document.getElementById('zjd').value
+            let meaArea = document.getElementById('mea').value
+            let houseArea = document.getElementById('house').value
+            console.log(meaArea);
+            if(meaArea >= 167){
+                meaArea = 167
+                
+            }
+            if(zjdArea > meaArea){
+                meaArea = zjdArea
+            }
+            let courtArea = (meaArea-houseArea).toFixed(2)
+            //courtArea.toFixed(1)
+            console.log(courtArea);
+            
+            
+           
+            let result =`房本面积${meaArea},包括正房面积${houseArea}，院子面积${courtArea}`
+            let spantxt = document.getElementById('txt')
+            spantxt.style.display = 'block'
+            spantxt.innerText = result
+        }
+        
+    </script>
+    测量总面积：<input type="text" id="mea" value=""/><br>
+    
+    宅基地面积：<input type="text" id="zjd" value=""/><br>
+    正 房 面 积：<input type="text" id="house" value=""/> <button onclick="house()"> 计算</button>
+    <span id="txt"></span>
+</body>
+</html>

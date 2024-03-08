@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-    #txt{position: relative;display:none;text-align: center;width: 400px; height: 30px;line-height: 30px;background: skyblue; top: 50px;left: 0px;}
+    #txt{position:absolute;text-align: center;width: 350px; height: 30px;line-height: 30px;background: skyblue; top: 280px;left: 10px;display:none}
     </style>
 </head>
 <body>
@@ -24,7 +24,7 @@
             if(zjdArea > meaArea){
                 meaArea = zjdArea
             }
-            let courtArea = (meaArea-houseArea).toFixed(2)
+            let courtArea = (meaArea-houseArea).toFixed(1)
             //courtArea.toFixed(1)
             console.log(courtArea);
             
@@ -32,7 +32,7 @@
            
             let result =`房本面积${meaArea},包括正房面积${houseArea}，院子面积${courtArea}`
             let spantxt = document.getElementById('txt')
-            spantxt.style.display = 'block'
+            spantxt.style.display = 'inline-block'
             spantxt.innerText = result
         }
         
@@ -40,7 +40,7 @@
     <br><br><br><br>
     测量总面积：<input type="text" id="mea" value=""/><br>
     宅基地面积：<input type="text" id="zjd" value=""/><br>
-    正 房 面 积：<input type="text" id="house" value=""/> <button onclick="house()"> 计算</button>
+    正房的面积：<input type="text" id="house" value=""/><br><button style="width:100px;height:30px;margin-top: 30px; margin-left: 100px;;" onclick="house()"> 计算</button>
     <span id="txt"></span>
 </body>
 </html>
